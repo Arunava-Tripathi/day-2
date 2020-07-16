@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>remaining mathods of string and array</h2>
+    <script>
+        let arr = ["I", "AM", "A", "BOY" ]
+        arr.splice(1, 2);
+        alert(arr);
+
+        let arr = ["t", "e", "s", "t", "y"];
+        alert(arr.slice(1, 3) );
+        alert(arr.slice(-2) );
+
+        // for each element call alert
+        ["dog", "cat", "wolf"].forEach(alert);
+
+        // searching in array
+        let arr = [1, 0, false];
+        alert(arr.includes(1) );
+
+
+        let users = [
+            {id:1, name: "ram"},
+            {id:2, name: "sam"},
+            {id:3, name: "jam"}
+        ];
+        let user = users.find(item=> item.id == 1);
+        alert (user.name);
+
+        let users = [
+            {id:1, name: "ram"},
+            {id:2, name: "sam"},
+            {id:3, name: "jam"}
+        ];
+        let someusers = users.filter(item=> item.id == 3);
+        alert (someuser.lenth);
+
+
+        let lengths = ["ram", "sam", "kam"].map(item=> item.lenth);
+        alert(lengths);
+
+
+        let arr = [ 1, 2, 15];
+        arr.sort();
+        alert(arr);
+
+
+        let arr = ["ram", "sam", "kam"];
+        let str = arr.join(':');
+        alert(str);
+
+    
+
+    </script>
+    
+</body>
+</html>
